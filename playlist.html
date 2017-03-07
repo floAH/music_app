@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width,initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="playlist.css">
+    <link rel="shortcut icon" href="">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav nav-tabs">
+
+            <li class="col-lg-4 col-xs-4 col-sm-4 col-md-4"><a id="libraryy" href="library"><span class="glyphicon glyphicon-music"></span><p id="greycolorlib">Library</p></a></span></li>
+
+
+            <li class="col-lg-4 col-xs-4 col-sm-4 col-md-4"> <a id="playlistt" href="playlists"><span class="glyphicon glyphicon-th-list"></span><p id="greycolorlist">Playlists</p></a></li>
+
+            <li class="col-lg-4 col-xs-4 col-sm-4 col-md-4"><a id="search" href="search" ><span class="glyphicon glyphicon-search"></span><p id="greycolorsear">Search</p></a></span></li>
+
+
+          </ul>
+        </nav>
+      </header>
+
+      <section class="Playlists">
+
+        <div class="butt">
+        <button id="playls"><span class="glyphicon glyphicon-plus"></span> Playlists</button>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="show_list">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="playlists_detail">
+       <h3 id=playlist_name></h3>
+       <div class="each">
+       </div>
+      </section>
+
+    <section class= "lib_hidden">
+      <div class="sort">
+        <div id="sortbutt">
+          <span class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+            <button id="sortartist">
+              Sort by artist
+            </button>
+          </span>
+        </div>
+        <div id="sortbutt">
+          <span class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+            <button id="sorttitle">
+              Sort by title
+            </button>
+          </span>
+        </div>
+      </div>
+
+      <div class="list">
+      </div>
+    </section>
+
+    <section class="popup_hidden">
+      <div id=hide_pop>
+        <div id="choose">
+          <span class="glyphicon glyphicon-remove" id="remove"></span>
+          <h3 id=head_choose>Choose playlist</h3>
+        </div>
+        <div id="choose_one_list">
+          <!-- <p id="mega">90's Mega Mix</p>
+          <p id="work">Workout Tracks</p>
+          <p id="daft">Daft Punk mix</p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class= "search_hidden">
+      <input type="text" id="mysearch" pattern="![a-zA-Z0-9-]+" placeholder="   Search" autocomplete="on"></input>
+      <p id="count"></p>
+      <div id="search_playlist">
+      </div>
+      <div id="song_in_list">
+      </div>
+
+      <div id="search_song">
+      </div>
+      <div id="search_song_art">
+      </div>
+
+
+    </section>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="music-app.js"></script>
+    <!-- <script src="mustache.js"></script> -->
+  </body>
+</html>
